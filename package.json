@@ -1,0 +1,61 @@
+{
+  "name": "rxstate",
+  "version": "1.0.0",
+  "description": "Simple rxjs based state management system",
+  "author": "Allan Dollé <hello@allandolle.fr> (https://allandolle.fr/)",
+  "homepage": "https://github.com/blephy/rxstate#readme",
+  "bugs": "https://github.com/blephy/rxstate/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blephy/rxstate.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "format:fix": "prettier --write .",
+    "format:ci": "prettier --check .",
+    "format:packagejson": "prettier-package-json --write ./package.json",
+    "lint:ci": "eslint . --ext js,ts --format junit -o reports/junit/rxstate-eslint-junit.xml",
+    "lint:fix": "eslint . --ext js,ts --fix",
+    "lint:packagejson": "npmPkgJsonLint .",
+    "ts:check": "tsc --noEmit",
+    "ts:build": "tsc -b tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npm-package-json-lint": "^6.3.0",
+    "prettier": "^2.6.1",
+    "prettier-package-json": "^2.6.3",
+    "typescript": "^4.6.3"
+  },
+  "packageManager": "yarn@3.2.0",
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "management",
+    "rxjs",
+    "state",
+    "state-management",
+    "store",
+    "typescript"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.1"
+  }
+}

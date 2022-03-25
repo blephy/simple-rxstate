@@ -1,0 +1,36 @@
+{
+  // cSpell settings
+  "cSpell.enabled": true,
+  "cSpell.language": "en",
+  "cSpell.allowCompoundWords": true,
+
+  // Linters & prettier extensions settings
+  "files.trimTrailingWhitespace": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": false
+  },
+  "eslint.format.enable": false,
+
+  // Jest extension settings
+  "jest.enableSnapshotUpdateMessages": true,
+  "jest.enableCodeLens": true,
+  "jest.showCoverageOnLoad": false,
+  "jest.debugMode": false,
+  "jest.autoRun": "off",
+  "jest.jestCommandLine": "yarn test",
+  "jest.debugCodeLens.showWhenTestStateIn": ["pass", "skip", "fail", "unknown"],
+
+  // Typescript settings
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.nodePath": ".yarn/sdks"
+}
