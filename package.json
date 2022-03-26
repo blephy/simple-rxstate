@@ -17,14 +17,17 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "format:fix": "prettier --write .",
     "format:ci": "prettier --check .",
+    "format:fix": "prettier --write .",
     "format:packagejson": "prettier-package-json --write ./package.json",
     "lint:ci": "eslint . --ext js,ts --format junit -o reports/junit/rxstate-eslint-junit.xml",
     "lint:fix": "eslint . --ext js,ts --fix",
     "lint:packagejson": "npmPkgJsonLint .",
-    "ts:check": "tsc --noEmit",
-    "ts:build": "tsc -b tsconfig.build.json"
+    "ts:build": "tsc -b tsconfig.build.json",
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
@@ -54,8 +57,5 @@
     "state-management",
     "store",
     "typescript"
-  ],
-  "dependencies": {
-    "tslib": "^2.3.1"
-  }
+  ]
 }
