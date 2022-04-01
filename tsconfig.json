@@ -19,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importsNotUsedAsValues": "error",
-    "checkJs": true,
+    "checkJs": false,
     "allowJs": true,
     "pretty": true,
     "strictNullChecks": true,
