@@ -21,6 +21,7 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
+    'plugin:rxjs/recommended',
     'airbnb-base',
     'airbnb-typescript/base',
     'plugin:import/typescript',
