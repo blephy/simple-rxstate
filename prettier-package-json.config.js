@@ -1,4 +1,3 @@
- 
 const { useTabs, tabWidth } = require('./prettier.config');
 
 module.exports = {

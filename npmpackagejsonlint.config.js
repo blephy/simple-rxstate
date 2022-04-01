@@ -1,4 +1,3 @@
- 
 const { keyOrder } = require('./prettier-package-json.config');
 
 module.exports = {

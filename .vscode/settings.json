@@ -27,6 +27,6 @@
   // Typescript settings
   "typescript.tsdk": "./node_modules/typescript/lib",
   "search.exclude": {
-    "**/.yarn": true,
-  },
+    "**/.yarn": true
+  }
 }
