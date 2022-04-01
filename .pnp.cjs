@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-package-json-lint", "npm:6.3.0"],\
             ["prettier", "npm:2.6.1"],\
             ["prettier-package-json", "npm:2.6.3"],\
+            ["rxjs", "npm:7.5.5"],\
             ["tslib", "npm:2.3.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
@@ -2704,6 +2705,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["rxjs", [\
+        ["npm:7.5.5", {\
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.5.5-d0546b1ccb-e034f60805.zip/node_modules/rxjs/",\
+          "packageDependencies": [\
+            ["rxjs", "npm:7.5.5"],\
+            ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["rxstate", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -2723,6 +2734,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-package-json-lint", "npm:6.3.0"],\
             ["prettier", "npm:2.6.1"],\
             ["prettier-package-json", "npm:2.6.3"],\
+            ["rxjs", "npm:7.5.5"],\
             ["tslib", "npm:2.3.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\

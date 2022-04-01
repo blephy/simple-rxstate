@@ -2144,6 +2144,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rxjs@npm:^7.5.5":
+  version: 7.5.5
+  resolution: "rxjs@npm:7.5.5"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: e034f60805210cce756dd2f49664a8108780b117cf5d0e2281506e9e6387f7b4f1532d974a8c8b09314fa7a16dd2f6cff3462072a5789672b5dcb45c4173f3c6
+  languageName: node
+  linkType: hard
+
 "rxstate@workspace:.":
   version: 0.0.0-use.local
   resolution: "rxstate@workspace:."
@@ -2162,6 +2171,7 @@ __metadata:
     npm-package-json-lint: ^6.3.0
     prettier: ^2.6.1
     prettier-package-json: ^2.6.3
+    rxjs: ^7.5.5
     tslib: ^2.3.1
     typescript: ^4.6.3
   languageName: unknown
@@ -2397,7 +2407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.3.1":
+"tslib@npm:^2.1.0, tslib@npm:^2.3.1":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
