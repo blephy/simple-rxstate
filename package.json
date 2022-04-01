@@ -21,7 +21,7 @@
     "format:ci": "prettier --check .",
     "format:packagejson": "prettier-package-json --write ./package.json",
     "format:fix": "prettier --write .",
-    "lint:ci": "eslint . --ext js,ts --format junit -o reports/junit/rxstate-eslint-junit.xml",
+    "lint:ci": "eslint . --ext js,ts --format json -o reports/eslint/rxstate-eslint-junit.json",
     "lint:fix": "eslint . --ext js,ts --fix",
     "lint:packagejson": "npmPkgJsonLint .",
     "ts:build": "tsc -b tsconfig.build.json",
