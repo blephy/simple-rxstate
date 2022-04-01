@@ -17,6 +17,7 @@ module.exports = {
   plugins: ['unused-imports'],
   extends: [
     'eslint:recommended',
+    'plugin:jsdoc/recommended',
     'plugin:import/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:sonarjs/recommended',
@@ -88,6 +89,10 @@ module.exports = {
      */
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/require-description': 'error',
+    /**
+     * eslint plugin jsdoc
+     */
+    'jsdoc/require-description': 'error',
     /**
      * eslint plugin import
      */
@@ -195,6 +200,7 @@ module.exports = {
         allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
       },
     ],
+    '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/no-shadow': ['error', { ignoreFunctionTypeParameterNameValueShadow: true }],
