@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+ 
 const { keyOrder } = require('./prettier-package-json.config');
 
 module.exports = {

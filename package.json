@@ -19,8 +19,8 @@
   "scripts": {
     "clean": "rm -rfv reports coverage build dist lib *.log .eslintcache",
     "format:ci": "prettier --check .",
-    "format:fix": "prettier --write .",
     "format:packagejson": "prettier-package-json --write ./package.json",
+    "format:fix": "prettier --write .",
     "lint:ci": "eslint . --ext js,ts --format junit -o reports/junit/rxstate-eslint-junit.xml",
     "lint:fix": "eslint . --ext js,ts --fix",
     "lint:packagejson": "npmPkgJsonLint .",

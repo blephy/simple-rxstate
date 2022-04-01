@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+ 
 const { useTabs, tabWidth } = require('./prettier.config');
 
 module.exports = {
