@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   testEnvironment: 'node',
-  testMatch: ['**/__tests__/**/*.+ts'],
+  testMatch: ['<rootDir>/__tests__/**/*.{spec,test}.ts'],
   coverageDirectory: '<rootDir>/reports/jest',
   coverageReporters: ['text', 'html', 'lcov', 'json'],
   collectCoverageFrom: ['<rootDir>/src/**/*', '!**/node_modules/**'],
