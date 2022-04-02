@@ -1,17 +1,17 @@
-import { RxState } from '../../src';
+import { TEST } from '../../src';
 
-describe('rxstate class', () => {
-  it('should be defined', () => {
+describe('rxstate', () => {
+  it('should have a `TEST` constant', () => {
     expect.assertions(1);
 
-    expect(RxState).toBeDefined();
+    expect(TEST).toBeDefined();
   });
 
-  it('can be instantiated', () => {
-    expect.assertions(1);
+  describe('test constant', () => {
+    it('should have value', () => {
+      expect.assertions(1);
 
-    const actual = new RxState(undefined);
-
-    expect(actual.showOptions()).toBeUndefined();
+      expect(TEST).toBe('hello');
+    });
   });
 });
