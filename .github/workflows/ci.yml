@@ -33,6 +33,8 @@ jobs:
         run: yarn ts:check
       - name: Test codebase
         run: yarn test:ci
+      - name: Mutate codebase
+        run: yarn test:stryker
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

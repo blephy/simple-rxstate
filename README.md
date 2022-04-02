@@ -12,4 +12,6 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=blephy_rxstate&metric=coverage)](https://sonarcloud.io/summary/new_code?id=blephy_rxstate)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=blephy_rxstate&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=blephy_rxstate)
 
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fblephy%2Frxstate%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/blephy/rxstate/master)
+
 Simple rxjs based state management system

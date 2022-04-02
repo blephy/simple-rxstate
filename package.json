@@ -26,6 +26,7 @@
     "lint:packagejson": "npmPkgJsonLint .",
     "test": "jest",
     "test:ci": "jest --silent --coverage --runInBand --ci --bail false",
+    "test:stryker": "stryker run",
     "ts:build": "tsc -b tsconfig.build.json",
     "ts:check": "tsc --noEmit"
   },
@@ -34,6 +35,9 @@
     "tslib": "^2.3.1"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^5.6.1",
+    "@stryker-mutator/jest-runner": "^5.6.1",
+    "@stryker-mutator/typescript-checker": "^5.6.1",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
