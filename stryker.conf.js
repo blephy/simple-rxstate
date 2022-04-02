@@ -31,4 +31,5 @@ module.exports = {
   coverageAnalysis: 'perTest',
   checkers: ['typescript'],
   tsconfigFile: 'tsconfig.json',
+  thresholds: { high: 80, low: 60, break: 50 },
 };
