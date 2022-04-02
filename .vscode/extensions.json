@@ -6,7 +6,7 @@
     "esbenp.prettier-vscode",
     "streetsidesoftware.code-spell-checker",
     "editorconfig.editorconfig",
-    "arcanis.vscode-zipfs"
+    "DavidAnson.vscode-markdownlint"
   ],
   "unwantedRecommendations": [
     "hookyqr.beautify",
