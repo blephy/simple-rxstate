@@ -19,11 +19,15 @@
   // Jest extension settings
   "jest.enableSnapshotUpdateMessages": true,
   "jest.enableCodeLens": true,
-  "jest.showCoverageOnLoad": false,
+  "jest.showCoverageOnLoad": true,
   "jest.debugMode": false,
   "jest.autoRun": "off",
   "jest.jestCommandLine": "yarn test",
   "jest.debugCodeLens.showWhenTestStateIn": ["pass", "skip", "fail", "unknown"],
+  "jest.coverageColors": {
+    "uncovered": "rgba(255,99,71, 0.2)",
+    "partially-covered": "rgba(255,215,0, 0.2)"
+  },
 
   // Typescript settings
   "typescript.tsdk": "./node_modules/typescript/lib",

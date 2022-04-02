@@ -17,7 +17,7 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "clean": "rm -rfv reports coverage build dist lib *.log .eslintcache",
+    "clean": "rm -rfv reports coverage build dist lib .eslintcache",
     "format:ci": "prettier --check .",
     "format:fix": "prettier --write .",
     "format:markdown": "markdownlint-cli2-fix '**/*.md'",

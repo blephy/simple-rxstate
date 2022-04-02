@@ -9,5 +9,6 @@
     "removeComments": true,
     "sourceMap": true,
     "noEmit": false
-  }
+  },
+  "include": ["./src/**/*"]
 }
