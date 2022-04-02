@@ -35,6 +35,8 @@ jobs:
         run: yarn test:ci
       - name: Mutate codebase
         run: yarn test:stryker
+        env:
+          credentials: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
