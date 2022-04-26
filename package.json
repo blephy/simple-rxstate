@@ -14,10 +14,10 @@
     "access": "public"
   },
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
   "files": [
     "/lib/**/*"
   ],
+  "types": "./lib/index.d.ts",
   "scripts": {
     "clean": "rm -rfv reports coverage build dist lib .eslintcache",
     "commit": "cz",
