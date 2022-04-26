@@ -31,10 +31,7 @@ module.exports = {
     'scripts-type': 'error',
     'version-type': 'error',
     'valid-values-license': ['error', ['MIT']],
-    'valid-values-publishConfig': [
-      'error',
-      [{ access: 'public', registry: 'https://npm.pkg.github.com/' }],
-    ],
+    'valid-values-publishConfig': ['error', [{ access: 'public' }]],
     'no-restricted-dependencies': [
       'error',
       [
