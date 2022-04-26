@@ -64,6 +64,11 @@ jobs:
         run: yarn install
       - name: Build package
         run: yarn ts:build
+      - name: Upload lib
+        uses: actions/upload-artifact@v3
+        with:
+          name: lib
+          path: lib/
 
   publish:
     needs: [build, test]
@@ -79,6 +84,10 @@ jobs:
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install
+      - name: Download lib
+        uses: actions/download-artifact@v3
+        with:
+          name: lib
       - name: Semantic release
         run: yarn semantic-release
         env:
