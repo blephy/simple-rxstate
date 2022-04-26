@@ -11,7 +11,7 @@ describe('rxstate', () => {
     it('should have value', () => {
       expect.assertions(1);
 
-      expect(TEST).toBe('hello');
+      expect(TEST).toBe('hello guys !');
     });
   });
 });
