@@ -64,3 +64,23 @@ jobs:
         run: yarn install
       - name: Build package
         run: yarn ts:build
+
+  publish:
+    needs: [build, test]
+    runs-on: [ubuntu-latest]
+    if: ${{ github.ref == 'refs/heads/master' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Semantic release
+        run: yarn semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
