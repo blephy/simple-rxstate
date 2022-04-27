@@ -1,3 +1,16 @@
 {
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "pinVersions": false,
+  "semanticCommits": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "baseBranches": ["master"],
+  "packageFiles": ["package.json", ".github/workflows/**/*.yml"],
+  "packageRules": [
+    {
+      "packageNames": ["typescript", "rxjs", "tslib"],
+      "separateMinorPatch": true
+    }
+  ]
 }
