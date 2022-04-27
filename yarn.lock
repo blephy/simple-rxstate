@@ -656,14 +656,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@es-joy/jsdoccomment@npm:~0.22.1":
-  version: 0.22.1
-  resolution: "@es-joy/jsdoccomment@npm:0.22.1"
+"@es-joy/jsdoccomment@npm:~0.29.0":
+  version: 0.29.0
+  resolution: "@es-joy/jsdoccomment@npm:0.29.0"
   dependencies:
     comment-parser: 1.3.1
     esquery: ^1.4.0
-    jsdoc-type-pratt-parser: ~2.2.5
-  checksum: c12963d60e197914edb33fc81011d3183259b9510d07f0f402d8b4bf1cc7220555be433d1f61c6c43f0fa79c6138dfb614c2a7bed61ecdb541d793e2648869fe
+    jsdoc-type-pratt-parser: ~3.0.1
+  checksum: 75c61b802b9d6b21906b303677d33d26ecb57a9a8bc8f2753cb5e00a3a123032614e4014f9f66aa563c84f3bfe32c01c27714a77e19d5b76df55ff13cd6dd366
   languageName: node
   linkType: hard
 
@@ -3855,21 +3855,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^38.1.4":
-  version: 38.1.4
-  resolution: "eslint-plugin-jsdoc@npm:38.1.4"
+"eslint-plugin-jsdoc@npm:^39.0.0":
+  version: 39.2.9
+  resolution: "eslint-plugin-jsdoc@npm:39.2.9"
   dependencies:
-    "@es-joy/jsdoccomment": ~0.22.1
+    "@es-joy/jsdoccomment": ~0.29.0
     comment-parser: 1.3.1
     debug: ^4.3.4
     escape-string-regexp: ^4.0.0
     esquery: ^1.4.0
-    regextras: ^0.8.0
-    semver: ^7.3.5
+    semver: ^7.3.7
     spdx-expression-parse: ^3.0.1
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0
-  checksum: 24cf53cfa2282a967f5af25a8feed02b6faa19a818b9c3cfe6ba615b499e2940bf1004fc1c06e1b44f8370ed61c65d90acc44ef26032c09804d6484eb1e8cfd7
+  checksum: b78dd3076d1b5b16e2018ce5cde32e78b042efca28addbc91b30d4d7615db7f7335817d285aff0c948ba5fc63725b35a96099a3488a745a885553e32a7c3d2c9
   languageName: node
   linkType: hard
 
@@ -5987,10 +5986,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdoc-type-pratt-parser@npm:~2.2.5":
-  version: 2.2.5
-  resolution: "jsdoc-type-pratt-parser@npm:2.2.5"
-  checksum: 47d68147fae7fe4343e0c1d47cbf55d2d963696e0583a1d398846be06df2df8e149e34a6304e04b6c148839600234e99a860bc712af829fac557fe7e5cd82141
+"jsdoc-type-pratt-parser@npm:~3.0.1":
+  version: 3.0.1
+  resolution: "jsdoc-type-pratt-parser@npm:3.0.1"
+  checksum: 452b3cb843cc31296a608f6bfebf19c7d52e2b872debfaa63ffda3d288915e06a4a1bd0212a0c0a8d6d3f70633c72bc3abfc8ef4755c8453063650f8c0f56694
   languageName: node
   linkType: hard
 
@@ -8322,13 +8321,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regextras@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "regextras@npm:0.8.0"
-  checksum: b7ec5b32a2b98b4b27048d44f8ab90009873c1307f2cf89321aa8c4cbb8147f1bee07863f4dadf585546ca0b91a234ad9804954dea5fc029421f6c25a4523798
-  languageName: node
-  linkType: hard
-
 "registry-auth-token@npm:^4.0.0":
   version: 4.2.1
   resolution: "registry-auth-token@npm:4.2.1"
@@ -8565,7 +8557,7 @@ __metadata:
     eslint-plugin-import: ^2.25.4
     eslint-plugin-jest: ^26.1.3
     eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-jsdoc: ^38.1.4
+    eslint-plugin-jsdoc: ^39.0.0
     eslint-plugin-rxjs: ^5.0.2
     eslint-plugin-sonarjs: ^0.13.0
     eslint-plugin-unicorn: ^42.0.0
