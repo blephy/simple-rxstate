@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/blephy/simple-rxstate/compare/v2.1.2...v2.1.3) (2022-04-28)
+
+
+### chore
+
+* change repo name ([7d11826](https://github.com/blephy/simple-rxstate/commit/7d118261cbb268dbc0c769deb64915842716a68d))
+
 ## [2.1.2](https://github.com/blephy/rxstate/compare/v2.1.1...v2.1.2) (2022-04-28)
 
 
