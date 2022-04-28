@@ -15,6 +15,7 @@
     "source.fixAll.tslint": false
   },
   "eslint.format.enable": false,
+  "markdownlint.ignore": ["CHANGELOG.md", "**/node_modules/**"],
 
   // Jest extension settings
   "jest.enableSnapshotUpdateMessages": true,

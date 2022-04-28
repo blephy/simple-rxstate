@@ -1,5 +1,5 @@
 module.exports = {
-  ignores: ['node_modules'],
+  ignores: ['node_modules', 'CHANGELOG.md'],
   config: {
     default: true,
     'no-inline-html': {
