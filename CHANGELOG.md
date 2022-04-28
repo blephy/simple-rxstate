@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/blephy/rxstate/compare/v2.1.0...v2.1.1) (2022-04-28)
+
+
+### chore
+
+* bypass lint and format for changelog ([#24](https://github.com/blephy/rxstate/issues/24)) ([ea2e1a5](https://github.com/blephy/rxstate/commit/ea2e1a55b88a1397bcace7711c7d6dd8ecd64a0a))
+* **deps:** update deps ([91e20af](https://github.com/blephy/rxstate/commit/91e20afb34e8a804e7046726ce097796d603eac8))
+
 # [2.1.0](https://github.com/blephy/rxstate/compare/v2.0.0...v2.1.0) (2022-04-28)
 
 
