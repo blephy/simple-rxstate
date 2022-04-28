@@ -1,3 +1,20 @@
+## [2.1.4](https://github.com/blephy/simple-rxstate/compare/v2.1.3...v2.1.4) (2022-04-28)
+
+
+### chore
+
+* dev env ([29acd6d](https://github.com/blephy/simple-rxstate/commit/29acd6d806c1b66a6a2ab396b670d204fb3bc532))
+
+
+### ci
+
+* add quality check for package.json ([6f9a7bd](https://github.com/blephy/simple-rxstate/commit/6f9a7bd8a8f49bc8b4cce8f7acc7565576f2db72))
+
+
+### fix
+
+* type check ([efff1ed](https://github.com/blephy/simple-rxstate/commit/efff1ed4afa8a251b92a769e74801a6fa7ff2785))
+
 ## [2.1.3](https://github.com/blephy/simple-rxstate/compare/v2.1.2...v2.1.3) (2022-04-28)
 
 
