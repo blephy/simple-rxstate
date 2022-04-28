@@ -8474,48 +8474,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxstate@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "rxstate@workspace:."
-  dependencies:
-    "@stryker-mutator/core": ^5.6.1
-    "@stryker-mutator/jest-runner": ^5.6.1
-    "@stryker-mutator/typescript-checker": ^5.6.1
-    "@types/jest": ^27.4.1
-    "@types/node": ^17.0.29
-    "@typescript-eslint/eslint-plugin": ^5.21.0
-    "@typescript-eslint/parser": ^5.21.0
-    cz-conventional-changelog: 3.3.0
-    eslint: ^8.14.0
-    eslint-config-airbnb-base: ^15.0.0
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-prettier: ^8.5.0
-    eslint-import-resolver-typescript: ^2.7.1
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^26.1.5
-    eslint-plugin-jest-formatting: ^3.1.0
-    eslint-plugin-jsdoc: ^39.2.9
-    eslint-plugin-rxjs: ^5.0.2
-    eslint-plugin-sonarjs: ^0.13.0
-    eslint-plugin-unicorn: ^42.0.0
-    eslint-plugin-unused-imports: ^2.0.0
-    jest: ^27.5.1
-    jest-junit: ^13.2.0
-    markdownlint-cli2: ^0.4.0
-    npm-package-json-lint: ^6.3.0
-    prettier: ^2.6.2
-    prettier-package-json: ^2.6.3
-    rxjs: ^7.5.5
-    semantic-release: ^19.0.2
-    semantic-release-npm-github-publish: ^1.5.1
-    ts-jest: ^27.1.4
-    ts-node: ^10.7.0
-    tslib: ^2.4.0
-    typescript: ^4.6.3
-  languageName: unknown
-  linkType: soft
-
 "safe-buffer@npm:~5.1.0, safe-buffer@npm:~5.1.1":
   version: 5.1.2
   resolution: "safe-buffer@npm:5.1.2"
@@ -8745,6 +8703,48 @@ __metadata:
   checksum: a6a540e054096a1f4cf8b1f21fea62ca3e44a19faa63bd486723b736348609caab1fa59a87f16559de347dde8ae1fdebfc25a8b6723c88ae8239f176ffb0dda5
   languageName: node
   linkType: hard
+
+"simple-rxstate@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "simple-rxstate@workspace:."
+  dependencies:
+    "@stryker-mutator/core": ^5.6.1
+    "@stryker-mutator/jest-runner": ^5.6.1
+    "@stryker-mutator/typescript-checker": ^5.6.1
+    "@types/jest": ^27.4.1
+    "@types/node": ^17.0.29
+    "@typescript-eslint/eslint-plugin": ^5.21.0
+    "@typescript-eslint/parser": ^5.21.0
+    cz-conventional-changelog: 3.3.0
+    eslint: ^8.14.0
+    eslint-config-airbnb-base: ^15.0.0
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-prettier: ^8.5.0
+    eslint-import-resolver-typescript: ^2.7.1
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-jest: ^26.1.5
+    eslint-plugin-jest-formatting: ^3.1.0
+    eslint-plugin-jsdoc: ^39.2.9
+    eslint-plugin-rxjs: ^5.0.2
+    eslint-plugin-sonarjs: ^0.13.0
+    eslint-plugin-unicorn: ^42.0.0
+    eslint-plugin-unused-imports: ^2.0.0
+    jest: ^27.5.1
+    jest-junit: ^13.2.0
+    markdownlint-cli2: ^0.4.0
+    npm-package-json-lint: ^6.3.0
+    prettier: ^2.6.2
+    prettier-package-json: ^2.6.3
+    rxjs: ^7.5.5
+    semantic-release: ^19.0.2
+    semantic-release-npm-github-publish: ^1.5.1
+    ts-jest: ^27.1.4
+    ts-node: ^10.7.0
+    tslib: ^2.4.0
+    typescript: ^4.6.3
+  languageName: unknown
+  linkType: soft
 
 "sisteransi@npm:^1.0.5":
   version: 1.0.5
