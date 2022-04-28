@@ -1,8 +1,12 @@
-# rxstate
+# simple-rxstate
 
 <div align="center">
 
 ![ci workflow](https://github.com/blephy/rxstate/actions/workflows/ci.yml/badge.svg)
+![NPM](https://img.shields.io/npm/l/simple-rxstate)
+![npm](https://img.shields.io/npm/v/simple-rxstate)
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fblephy%2Frxstate%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/blephy/rxstate/master)
