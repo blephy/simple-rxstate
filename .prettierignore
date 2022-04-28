@@ -44,3 +44,7 @@ browserslist
 package-lock.json
 yarn.lock
 .pnp.*
+
+# Ignore generated files #
+##########################
+CHANGELOG.md
