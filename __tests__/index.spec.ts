@@ -1,4 +1,4 @@
-import { TEST } from '../../src';
+import { TEST } from '../src';
 
 describe('rxstate', () => {
   it('should have a `TEST` constant', () => {
