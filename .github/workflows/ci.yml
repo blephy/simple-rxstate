@@ -27,6 +27,8 @@ jobs:
         run: yarn lint:markdown
       - name: Lint package.json
         run: yarn lint:packagejson
+      - name: Words spell checking
+        run: yarn spell:check:ci
       - name: Lint codebase
         run: yarn lint:ci
       - name: Format codebase

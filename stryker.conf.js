@@ -22,14 +22,19 @@ module.exports = {
   packageManager: 'yarn',
   reporters: ['html', 'clear-text', 'progress', 'dashboard'],
   htmlReporter: {
-    baseDir: 'reports/stryker',
+    baseDir: './reports/stryker',
   },
   jsonReporter: {
-    fileName: 'reports/stryker/mutation.json',
+    fileName: './reports/stryker/mutation.json',
   },
   testRunner: 'jest',
+  jest: {
+    projectType: 'custom',
+    configFile: 'jest.config.js',
+    enableFindRelatedTests: true,
+  },
   coverageAnalysis: 'perTest',
   checkers: ['typescript'],
-  tsconfigFile: 'tsconfig.json',
+  tsconfigFile: 'tsconfig.stryker.json',
   thresholds: { high: 80, low: 60, break: 50 },
 };

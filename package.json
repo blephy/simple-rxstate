@@ -14,23 +14,35 @@
     "access": "public",
     "registry": " https://registry.npmjs.org"
   },
-  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./lib/index.js"
+      }
+    }
+  },
   "files": [
     "/lib/**/*"
   ],
   "types": "./lib/index.d.ts",
   "scripts": {
+    "check:packagejson": "package-check",
     "clean": "rm -rfv reports coverage build dist lib .eslintcache",
     "commit": "cz",
     "format:ci": "prettier --check .",
     "format:fix": "prettier --write .",
     "format:markdown": "markdownlint-cli2-fix '**/*.md'",
     "format:packagejson": "prettier-package-json --write ./package.json",
+    "postinstall": "husky install",
     "lint:ci": "eslint . --ext js,ts --format json -o reports/eslint/rxstate-eslint-junit.json",
     "lint:fix": "eslint . --ext js,ts --fix",
     "lint:markdown": "markdownlint-cli2 '**/*.md'",
     "lint:packagejson": "npmPkgJsonLint .",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
     "semantic-release": "semantic-release",
+    "spell:check": "cspell '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
+    "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --no-summary --no-progress --config '.vscode/cspell.json'",
     "test": "jest",
     "test:ci": "jest --silent --coverage --runInBand --ci --bail false",
     "test:stryker": "stryker run",
@@ -38,10 +50,10 @@
     "ts:check": "tsc --noEmit"
   },
   "dependencies": {
-    "rxjs": "^7.5.5",
-    "tslib": "^2.4.0"
+    "rxjs": "^7.5.5"
   },
   "devDependencies": {
+    "@skypack/package-check": "^0.2.2",
     "@stryker-mutator/core": "^5.6.1",
     "@stryker-mutator/jest-runner": "^5.6.1",
     "@stryker-mutator/typescript-checker": "^5.6.1",
@@ -49,6 +61,7 @@
     "@types/node": "^17.0.29",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
+    "cspell": "^5.19.7",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.14.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -64,10 +77,13 @@
     "eslint-plugin-sonarjs": "^0.13.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.0",
     "jest": "^27.5.1",
     "jest-junit": "^13.2.0",
+    "lint-staged": "^12.4.1",
     "markdownlint-cli2": "^0.4.0",
     "npm-package-json-lint": "^6.3.0",
+    "pinst": "^3.0.0",
     "prettier": "^2.6.2",
     "prettier-package-json": "^2.6.3",
     "semantic-release": "^19.0.2",
