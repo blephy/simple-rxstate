@@ -31,7 +31,10 @@ module.exports = {
     'scripts-type': 'error',
     'version-type': 'error',
     'valid-values-license': ['error', ['MIT']],
-    'valid-values-publishConfig': ['error', [{ access: 'public' }]],
+    'valid-values-publishConfig': [
+      'error',
+      [{ access: 'public', registry: ' https://registry.npmjs.org' }],
+    ],
     'no-restricted-dependencies': [
       'error',
       [
