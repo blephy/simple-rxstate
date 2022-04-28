@@ -1,3 +1,15 @@
+## [2.1.2](https://github.com/blephy/rxstate/compare/v2.1.1...v2.1.2) (2022-04-28)
+
+
+### chore
+
+* try publishing on npm ([786fe85](https://github.com/blephy/rxstate/commit/786fe8595089d9c082b501f8540d53e393317df8))
+
+
+### fix
+
+* lint packagejson ([#26](https://github.com/blephy/rxstate/issues/26)) ([5c22d47](https://github.com/blephy/rxstate/commit/5c22d47d2db816a06ca6c2e0acd37e1e57bb5f6e))
+
 ## [2.1.1](https://github.com/blephy/rxstate/compare/v2.1.0...v2.1.1) (2022-04-28)
 
 
