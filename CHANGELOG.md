@@ -1,3 +1,11 @@
+## [2.1.5](https://github.com/blephy/simple-rxstate/compare/v2.1.4...v2.1.5) (2022-04-29)
+
+
+### chore
+
+* **deps:** add peerDeps inquirer ([de1b26a](https://github.com/blephy/simple-rxstate/commit/de1b26a5b36f889bc4161772526444a7c8e8aef1))
+* **qa:** add commitlint and commitizen working together ([1458db7](https://github.com/blephy/simple-rxstate/commit/1458db77cbe1b6100114b99735d9f1370aef1533))
+
 ## [2.1.4](https://github.com/blephy/simple-rxstate/compare/v2.1.3...v2.1.4) (2022-04-28)
 
 
