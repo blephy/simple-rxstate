@@ -5769,7 +5769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:~8.2.0":
+"inquirer@npm:^8.2.4, inquirer@npm:~8.2.0":
   version: 8.2.4
   resolution: "inquirer@npm:8.2.4"
   dependencies:
@@ -9641,6 +9641,7 @@ __metadata:
     eslint-plugin-unicorn: ^42.0.0
     eslint-plugin-unused-imports: ^2.0.0
     husky: ^7.0.0
+    inquirer: ^8.2.4
     jest: ^27.5.1
     jest-junit: ^13.2.0
     lint-staged: ^12.4.1
