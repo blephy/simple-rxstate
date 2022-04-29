@@ -3,6 +3,6 @@
 
 [ -n "$CI" ] && exit 0
 
-exec git diff --cached --name-only | npx cspell lint "**" ".**/**" --show-suggestions --no-summary --no-progress --no-must-find-files --config ".vscode/cspell.json" --file-list stdin
+exec git diff --cached --name-only | npx --no -- cspell lint "**" ".**/**" --show-suggestions --no-summary --no-must-find-files --config ".vscode/cspell.json" --file-list stdin
 
-npx lint-staged
+npx --no -- lint-staged
