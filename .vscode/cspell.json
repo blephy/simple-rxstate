@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "allowCompoundWords": true,
+  "words": [
+    "blephy",
+    "circleci",
+    "commitlint",
+    "Dollé",
+    "IIFEs",
+    "lcov",
+    "pinst",
+    "rxstate",
+    "sonarjs"
+  ],
+  "flagWords": ["hte"],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "vscode-extension",
+    ".git",
+    "*.lock",
+    "**/*.xml",
+    "reports",
+    ".github/CODEOWNERS",
+    ".husky",
+    ".vscode",
+    ".yarn"
+  ]
+}

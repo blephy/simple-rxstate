@@ -1,0 +1,36 @@
+{
+  // Linters & prettier extensions settings
+  "files.trimTrailingWhitespace": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true,
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": false
+  },
+  "eslint.format.enable": false,
+  "markdownlint.ignore": ["CHANGELOG.md", "**/node_modules/**"],
+
+  // Jest extension settings
+  "jest.enableSnapshotUpdateMessages": true,
+  "jest.enableCodeLens": true,
+  "jest.showCoverageOnLoad": true,
+  "jest.debugMode": false,
+  "jest.autoRun": "off",
+  "jest.jestCommandLine": "yarn test",
+  "jest.debugCodeLens.showWhenTestStateIn": ["pass", "skip", "fail", "unknown"],
+  "jest.coverageColors": {
+    "uncovered": "rgba(255,99,71, 0.2)",
+    "partially-covered": "rgba(255,215,0, 0.2)"
+  },
+
+  // Typescript settings
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "search.exclude": {
+    "**/.yarn": true
+  },
+
+  // UX
+  "explorer.fileNesting.enabled": true
+}

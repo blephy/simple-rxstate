@@ -1,0 +1,101 @@
+name: ci
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Lint markdown
+        run: yarn lint:markdown
+      - name: Lint package.json
+        run: yarn lint:packagejson
+      - name: Check package.json quality
+        run: yarn check:packagejson
+      - name: Words spell checking
+        run: yarn spell:check:ci
+      - name: Lint codebase
+        run: yarn lint:ci
+      - name: Format codebase
+        run: yarn format:ci
+      - name: Typecheck codebase
+        run: yarn ts:check
+      - name: Test codebase
+        run: yarn test:ci
+      - name: Mutate codebase
+        run: yarn test:stryker
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  build:
+    needs: test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Build package
+        run: yarn ts:build
+      - name: Upload lib
+        uses: actions/upload-artifact@v3
+        with:
+          name: lib
+          path: lib/
+
+  publish:
+    needs: [build, test]
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Use Node.js 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Download lib
+        uses: actions/download-artifact@v3
+        with:
+          name: lib
+      - name: Semantic release
+        run: yarn semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

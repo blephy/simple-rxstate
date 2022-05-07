@@ -1,0 +1,110 @@
+{
+  "name": "simple-rxstate",
+  "version": "2.1.6",
+  "description": "Simple rxjs based state management system",
+  "author": "Allan Dollé <hello@allandolle.fr> (https://allandolle.fr/)",
+  "homepage": "https://github.com/blephy/simple-rxstate#readme",
+  "bugs": "https://github.com/blephy/simple-rxstate/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blephy/simple-rxstate.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": " https://registry.npmjs.org"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
+  "files": [
+    "/lib/**/*"
+  ],
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "check:packagejson": "package-check",
+    "clean": "rm -rfv reports coverage build dist lib .eslintcache",
+    "commit": "cz",
+    "format:ci": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "format:markdown": "markdownlint-cli2-fix '**/*.md'",
+    "format:packagejson": "prettier-package-json --write ./package.json",
+    "postinstall": "husky install",
+    "lint:ci": "eslint . --ext js,ts --format json -o reports/eslint/simple-rxstate-eslint-junit.json",
+    "lint:fix": "eslint . --ext js,ts --fix",
+    "lint:markdown": "markdownlint-cli2 '**/*.md'",
+    "lint:packagejson": "npmPkgJsonLint .",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable",
+    "semantic-release": "semantic-release",
+    "spell:check": "cspell '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
+    "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --no-summary --config '.vscode/cspell.json'",
+    "test": "jest",
+    "test:ci": "jest --silent --coverage --runInBand --ci --bail false",
+    "test:stryker": "stryker run",
+    "ts:build": "tsc -b tsconfig.build.json",
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@commitlint/cz-commitlint": "^16.2.4",
+    "@skypack/package-check": "^0.2.2",
+    "@stryker-mutator/core": "^6.0.2",
+    "@stryker-mutator/jest-runner": "^6.0.2",
+    "@stryker-mutator/typescript-checker": "^6.0.2",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "commitizen": "^4.2.4",
+    "cspell": "^5.20.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-jsdoc": "^39.2.9",
+    "eslint-plugin-rxjs": "^5.0.2",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
+    "inquirer": "^8.2.4",
+    "jest": "^27.5.1",
+    "jest-junit": "^13.2.0",
+    "lint-staged": "^12.4.1",
+    "markdownlint-cli2": "^0.4.0",
+    "npm-package-json-lint": "^6.3.0",
+    "pinst": "^3.0.0",
+    "prettier": "^2.6.2",
+    "prettier-package-json": "^2.6.3",
+    "semantic-release": "^19.0.2",
+    "semantic-release-npm-github-publish": "^1.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "packageManager": "yarn@3.2.0",
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "management",
+    "rxjs",
+    "state",
+    "state-management",
+    "store",
+    "typescript"
+  ]
+}
