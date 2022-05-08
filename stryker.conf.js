@@ -22,7 +22,7 @@ module.exports = {
   packageManager: 'yarn',
   reporters: ['html', 'clear-text', 'progress', 'dashboard'],
   htmlReporter: {
-    baseDir: './reports/stryker',
+    fileName: './reports/stryker/mutation.html',
   },
   jsonReporter: {
     fileName: './reports/stryker/mutation.json',

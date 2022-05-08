@@ -43,8 +43,10 @@
     "spell:check": "cspell '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
     "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --no-summary --config '.vscode/cspell.json'",
     "test": "jest",
-    "test:ci": "jest --silent --coverage --runInBand --ci --bail false",
-    "test:stryker": "stryker run",
+    "test:unit": "yarn test",
+    "test:unit:ci": "jest --silent --coverage --runInBand --ci --bail false",
+    "test:mutation": "stryker run",
+    "test:mutation:ci": "yarn test:mutation",
     "ts:build": "tsc -b tsconfig.build.json",
     "ts:check": "tsc --noEmit"
   },
