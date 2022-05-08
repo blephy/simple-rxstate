@@ -7,19 +7,15 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [16.x]
+  qa-lint:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: '.nvmrc'
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install
@@ -31,38 +27,72 @@ jobs:
         run: yarn check:packagejson
       - name: Words spell checking
         run: yarn spell:check:ci
-      - name: Lint codebase
-        run: yarn lint:ci
       - name: Format codebase
         run: yarn format:ci
       - name: Typecheck codebase
         run: yarn ts:check
-      - name: Test codebase
-        run: yarn test:ci
-      - name: Mutate codebase
-        run: yarn test:stryker
-        env:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Lint codebase
+        run: yarn lint:ci
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: eslint
+          path: reports/eslint
+          if-no-files-found: error
 
-  build:
-    needs: test
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [16.x]
+  qa-unit-testing:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Run unit and intergration specs
+        run: yarn test:unit:ci
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: jest
+          path: reports/jest
+          if-no-files-found: error
+
+  qa-mutation-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Run mutation specs
+        run: yarn test:mutation:ci
+        env:
+          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: stryker
+          path: reports/stryker
+          if-no-files-found: error
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
           cache: 'yarn'
       - name: Install dependencies
         run: yarn install
@@ -72,11 +102,43 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: lib
-          path: lib/
+          path: lib
+          if-no-files-found: error
+
+  qa-sonar-cloud:
+    needs: [qa-lint, qa-unit-testing]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install
+      - name: Download Eslint artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: eslint
+          path: reports/eslint
+      - name: Download Jest artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: jest
+          path: reports/jest
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   publish:
-    needs: [build, test]
-    runs-on: [ubuntu-latest]
+    needs: [build, qa-lint, qa-unit-testing, qa-mutation-testing]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -94,6 +156,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: lib
+          path: lib
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: Semantic release
         run: yarn semantic-release
         env:
