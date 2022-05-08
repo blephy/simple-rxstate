@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     '@semantic-release/git',
     {
-      assets: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+      assets: ['package.json', 'README.md', 'CHANGELOG.md', 'LICENSE', 'lib/**/*'],
       message: 'release(version): Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
     },
   ],
