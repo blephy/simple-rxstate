@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/blephy/simple-rxstate/compare/v1.0.0...v1.0.1) (2022-05-08)
+
+
+### ci
+
+* **github:** use latest node version, split jobs, and improve artifact… ([#37](https://github.com/blephy/simple-rxstate/issues/37)) ([81b1a11](https://github.com/blephy/simple-rxstate/commit/81b1a113c2e1d8c3c182120d707aa664cee37b3a))
+
 ## [1.0.1-alpha.1](https://github.com/blephy/simple-rxstate/compare/v1.0.0...v1.0.1-alpha.1) (2022-05-08)
 
 
