@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/blephy/simple-rxstate/compare/v1.0.1...v1.0.2) (2022-05-08)
+
+
+### fix
+
+* **release:** do not commit lib assets when release ([33d4053](https://github.com/blephy/simple-rxstate/commit/33d40539eb2cfb26158d7a4deb370a919dea82a7))
+
 ## [1.0.1](https://github.com/blephy/simple-rxstate/compare/v1.0.0...v1.0.1) (2022-05-08)
 
 
