@@ -30,7 +30,7 @@ module.exports = {
       {
         ancestorSeparator: ' › ',
         classNameTemplate: '{classname}',
-        outputDirectory: './reports/junit',
+        outputDirectory: './reports/jest',
         outputName: 'simple-rxstate-jest-junit.xml',
         suiteName: 'jest simple rxstate tests',
         titleTemplate: '{title}',
