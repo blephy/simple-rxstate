@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/blephy/simple-rxstate/compare/v1.0.2...v1.0.3) (2022-05-08)
+
+
+### ci
+
+* **github:** use .nvmrc node version in publish job ([983a4fb](https://github.com/blephy/simple-rxstate/commit/983a4fbac872632260e40b24e48efbdcec58b1ab))
+
 ## [1.0.2](https://github.com/blephy/simple-rxstate/compare/v1.0.1...v1.0.2) (2022-05-08)
 
 
