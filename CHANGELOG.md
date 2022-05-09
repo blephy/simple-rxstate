@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/blephy/simple-rxstate/compare/v1.0.3...v1.0.4) (2022-05-09)
+
+
+### chore
+
+* **deps:** update dependency husky to v8 ([2fa440f](https://github.com/blephy/simple-rxstate/commit/2fa440f5896db781c4670d611c27fe75fe865fe0))
+
 ## [1.0.3](https://github.com/blephy/simple-rxstate/compare/v1.0.2...v1.0.3) (2022-05-08)
 
 
