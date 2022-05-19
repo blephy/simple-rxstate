@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/blephy/simple-rxstate/compare/v1.0.8...v1.0.9) (2022-05-19)
+
+
+### chore
+
+* **deps:** update jest monorepo to v28 ([55a381c](https://github.com/blephy/simple-rxstate/commit/55a381c9aef6fe8dc698323bfbfa5467fc09145c))
+
 ## [1.0.8](https://github.com/blephy/simple-rxstate/compare/v1.0.7...v1.0.8) (2022-05-19)
 
 
