@@ -15,6 +15,7 @@
     "sonarjs"
   ],
   "flagWords": ["hte"],
+  "ignoreWords": ["nocheck", "isnan", "eqeqeq", "iife"],
   "ignorePaths": [
     "**/node_modules/**",
     "vscode-extension",
