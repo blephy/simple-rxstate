@@ -1,4 +1,4 @@
-const { keyOrder } = require('./prettier-package-json.config');
+const { keyOrder } = require('./prettier-package-json.config.cjs');
 
 module.exports = {
   rules: {

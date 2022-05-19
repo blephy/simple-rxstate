@@ -14,16 +14,18 @@
     "access": "public",
     "registry": " https://registry.npmjs.org"
   },
+  "type": "module",
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts",
-      "import": "./lib/index.js"
+      "types": "./lib/types/index.d.ts",
+      "require": "./lib/cjs/index.js",
+      "import": "./lib/esm/index.js"
     }
   },
   "files": [
     "/lib/**/*"
   ],
-  "types": "./lib/index.d.ts",
+  "types": "./lib/types/index.d.ts",
   "scripts": {
     "check:packagejson": "package-check",
     "clean": "rm -rfv reports coverage build dist lib .eslintcache",
@@ -43,11 +45,13 @@
     "spell:check": "cspell '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
     "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --no-summary --config '.vscode/cspell.json'",
     "test": "jest",
-    "test:unit": "yarn test",
-    "test:unit:ci": "jest --silent --coverage --runInBand --ci --bail false",
     "test:mutation": "stryker run",
     "test:mutation:ci": "yarn test:mutation",
-    "ts:build": "tsc -b tsconfig.build.json",
+    "test:unit": "yarn test",
+    "test:unit:ci": "jest --silent --coverage --runInBand --ci --bail false",
+    "ts:build": "yarn clean && yarn ts:build:cjs && yarn ts:build:esm",
+    "ts:build:cjs": "tsc -b tsconfig.build.cjs.json",
+    "ts:build:esm": "tsc -b tsconfig.build.esm.json",
     "ts:check": "tsc --noEmit"
   },
   "dependencies": {
@@ -61,12 +65,12 @@
     "@stryker-mutator/core": "^6.0.2",
     "@stryker-mutator/jest-runner": "^6.0.2",
     "@stryker-mutator/typescript-checker": "^6.0.2",
-    "@types/jest": "^27.5.0",
-    "@types/node": "^17.0.31",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "commitizen": "^4.2.4",
-    "cspell": "^5.20.0",
+    "cspell": "^5.21.0",
     "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -74,16 +78,17 @@
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-jest": "^26.2.2",
     "eslint-plugin-jest-formatting": "^3.1.0",
-    "eslint-plugin-jsdoc": "^39.2.9",
+    "eslint-plugin-jsdoc": "^39.3.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-sonarjs": "^0.13.0",
     "eslint-plugin-unicorn": "^42.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "inquirer": "^8.2.4",
-    "jest": "^28.0.0",
+    "jest": "^28.1.0",
     "jest-junit": "^13.2.0",
     "lint-staged": "^12.4.1",
     "markdownlint-cli2": "^0.4.0",
@@ -93,13 +98,13 @@
     "prettier-package-json": "^2.6.3",
     "semantic-release": "^19.0.2",
     "semantic-release-npm-github-publish": "^1.5.1",
-    "ts-jest": "^28.0.0",
+    "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4"
   },
   "packageManager": "yarn@3.2.1",
   "engines": {
-    "node": ">=12"
+    "node": ">=14.18"
   },
   "keywords": [
     "management",

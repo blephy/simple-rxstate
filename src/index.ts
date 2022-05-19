@@ -1,3 +1,7 @@
-const TEST = 'hello';
+import { test } from './constants.js';
 
-export { TEST };
+const testTest: string = `${test}test`;
+
+export { testTest };
+
+export { type Test } from './constants.js';

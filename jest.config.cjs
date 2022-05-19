@@ -10,6 +10,10 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.jest.json',
     },
   },
+  extensionsToTreatAsEsm: ['.ts'],
+  moduleNameMapper: {
+    '(.+)\\.[jt]s': '$1',
+  },
   testEnvironment: 'node',
   testMatch: ['<rootDir>/__tests__/**/*.{spec,test}.ts'],
   coverageDirectory: '<rootDir>/reports/jest',

@@ -1,17 +1,11 @@
-import { TEST } from '../src';
+import { testTest } from '../src';
 
-describe('simple rxstate', () => {
-  it('should have a `TEST` constant', () => {
-    expect.assertions(1);
-
-    expect(TEST).toBeDefined();
-  });
-
-  describe('test constant', () => {
-    it('should have value', () => {
+describe('simple rxstate', (): void => {
+  describe('test constant', (): void => {
+    it('should have value', (): void => {
       expect.assertions(1);
 
-      expect(TEST).toBe('hello');
+      expect(testTest).toBe('hellotest');
     });
   });
 });

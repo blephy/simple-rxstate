@@ -1,8 +1,6 @@
-const { useTabs, tabWidth } = require('./prettier.config');
-
 module.exports = {
-  useTabs,
-  tabWidth,
+  useTabs: false,
+  tabWidth: 2,
   expandUsers: true,
   keyOrder: [
     /**

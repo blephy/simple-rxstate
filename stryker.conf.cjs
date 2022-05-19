@@ -30,7 +30,7 @@ module.exports = {
   testRunner: 'jest',
   jest: {
     projectType: 'custom',
-    configFile: 'jest.config.js',
+    configFile: 'jest.config.cjs',
     enableFindRelatedTests: true,
   },
   coverageAnalysis: 'perTest',
