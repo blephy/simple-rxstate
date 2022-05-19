@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/blephy/simple-rxstate/compare/v1.0.6...v1.0.7) (2022-05-19)
+
+
+### chore
+
+* **deps:** update yarn to v3.2.1 ([6fc712c](https://github.com/blephy/simple-rxstate/commit/6fc712c8f7d6369ac424aef92af4107991ac34c0))
+
 ## [1.0.6](https://github.com/blephy/simple-rxstate/compare/v1.0.5...v1.0.6) (2022-05-19)
 
 
