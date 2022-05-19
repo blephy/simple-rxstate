@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/blephy/simple-rxstate/compare/v1.0.5...v1.0.6) (2022-05-19)
+
+
+### chore
+
+* **deps:** update commitlint monorepo to v17 ([e50c94b](https://github.com/blephy/simple-rxstate/commit/e50c94bdae0e385afe82ba79e3be4b1f40e33c4f))
+
 ## [1.0.5](https://github.com/blephy/simple-rxstate/compare/v1.0.4...v1.0.5) (2022-05-09)
 
 
