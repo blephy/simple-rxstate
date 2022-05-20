@@ -27,10 +27,12 @@
 
   // Typescript settings
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "search.exclude": {
-    "**/.yarn": true
-  },
 
   // UX
-  "explorer.fileNesting.enabled": true
+  "explorer.fileNesting.enabled": true,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/lib": true,
+    "**/node_modules": true
+  }
 }
