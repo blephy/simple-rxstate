@@ -1,7 +1,15 @@
 const test: string = 'hello';
 
-interface Test {
+/**
+ * Test interface
+ */
+interface TestInterface {
+  /**
+   * hello
+   *
+   * @type {string}
+   */
   hello: string;
 }
 
-export { test, type Test };
+export { test, type TestInterface };

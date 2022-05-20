@@ -4,6 +4,7 @@ module.exports = {
     node: true,
     commonjs: true,
     es6: true,
+    es2020: true,
     es2022: true,
   },
   settings: {
@@ -20,7 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: ['unused-imports', 'prefer-arrow'],
+  plugins: ['unused-imports', 'prefer-arrow', 'sort-exports'],
   extends: [
     'eslint:recommended',
     'plugin:jsdoc/recommended',
@@ -29,8 +30,6 @@ module.exports = {
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
     'plugin:rxjs/recommended',
-    'airbnb-base',
-    'airbnb-typescript/base',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -74,10 +73,42 @@ module.exports = {
     'jsdoc/check-syntax': 'error',
     'jsdoc/check-tag-names': 'error',
     'jsdoc/check-values': 'error',
+    'jsdoc/check-types': 'error',
+    'jsdoc/valid-types': 'error',
     'jsdoc/empty-tags': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/newline-after-description': 'error',
-    'jsdoc/require-jsdoc': 'error',
+    'jsdoc/require-jsdoc': [
+      'error',
+      {
+        require: {
+          ArrowFunctionExpression: true,
+          ClassDeclaration: true,
+          ClassExpression: true,
+          FunctionDeclaration: true,
+          FunctionExpression: true,
+          MethodDefinition: true,
+        },
+        contexts: [
+          'ArrowFunctionExpression',
+          'FunctionDeclaration',
+          'FunctionExpression',
+          'MethodDefinition',
+          'Property',
+          'TSDeclareFunction',
+          'TSEnumDeclaration',
+          'TSInterfaceDeclaration',
+          'TSMethodSignature',
+          'TSPropertySignature',
+          'TSTypeAliasDeclaration',
+          // 'VariableDeclaration',
+        ],
+        checkGetters: true,
+        checkSetters: true,
+        checkConstructors: true,
+        enableFixer: true,
+      },
+    ],
     'jsdoc/require-param': 'error',
     'jsdoc/require-param-description': 'error',
     'jsdoc/require-param-name': 'error',
@@ -392,7 +423,7 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-type-alias': [
-      'error',
+      'off',
       {
         allowAliases: 'never',
         allowCallbacks: 'always',
@@ -783,6 +814,11 @@ module.exports = {
         next: ['const', 'let'],
       },
       {
+        blankLine: 'never',
+        prev: ['export'],
+        next: ['export'],
+      },
+      {
         blankLine: 'always',
         prev: '*',
         next: [
@@ -801,10 +837,6 @@ module.exports = {
           'while',
           'block',
           'multiline-expression',
-          'require',
-          'exports',
-          'import',
-          'export',
         ],
       },
       {
@@ -819,9 +851,7 @@ module.exports = {
           'block-like',
           'multiline-expression',
           'require',
-          'exports',
           'import',
-          'export',
         ],
         next: '*',
       },
@@ -829,16 +859,6 @@ module.exports = {
         blankLine: 'never',
         prev: ['if', 'for', 'do', 'while'],
         next: 'block-like',
-      },
-      {
-        blankLine: 'any',
-        prev: ['exports', 'export'],
-        next: ['exports', 'export'],
-      },
-      {
-        blankLine: 'any',
-        prev: ['require', 'import'],
-        next: ['require', 'import'],
       },
     ],
     quotes: 'off',
@@ -1595,9 +1615,6 @@ module.exports = {
         bundledDependencies: true,
       },
     ],
-    'sort-imports': ['error', { ignoreDeclarationSort: true }],
-    'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': 'off',
     'import/order': [
       'error',
       {
@@ -1615,6 +1632,13 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'sort-imports': ['error', { ignoreDeclarationSort: true }],
+    'sort-exports/sort-exports': [
+      'error',
+      { sortDir: 'asc', ignoreCase: true, sortExportKindFirst: 'value' },
+    ],
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': 'off',
   },
   overrides: [
     {
@@ -1642,6 +1666,7 @@ module.exports = {
     {
       files: ['./**/*.?(c)js'],
       rules: {
+        'jsdoc/require-jsdoc': 'off',
         'unicorn/prefer-module': 'off',
         'unicorn/no-null': 'off',
         '@typescript-eslint/no-var-requires': 'off',
