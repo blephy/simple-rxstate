@@ -113,5 +113,8 @@
     "state-management",
     "store",
     "typescript"
-  ]
+  ],
+  "release": {
+    "extends": "semantic-release-npm-github-publish"
+  }
 }
