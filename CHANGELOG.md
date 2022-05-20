@@ -1,3 +1,15 @@
+## [1.0.10](https://github.com/blephy/simple-rxstate/compare/v1.0.9...v1.0.10) (2022-05-20)
+
+
+### chore
+
+* convert package to ESModule ([3b1709c](https://github.com/blephy/simple-rxstate/commit/3b1709ccc04026def824231ea86bd90da828d2ae)), closes [#46](https://github.com/blephy/simple-rxstate/issues/46)
+
+
+### fix
+
+* **release:** semantic release does not accept .cjs extension configuration file ([3b640b8](https://github.com/blephy/simple-rxstate/commit/3b640b88de35460b12cdb8fa266814e01316596d))
+
 ## [1.0.9](https://github.com/blephy/simple-rxstate/compare/v1.0.8...v1.0.9) (2022-05-19)
 
 
