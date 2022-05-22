@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/blephy/simple-rxstate/compare/v1.0.10...v1.0.11) (2022-05-22)
+
+
+### chore
+
+* **deps:** update dependency cspell to v6 ([f543937](https://github.com/blephy/simple-rxstate/commit/f543937711c38f3773928aa0f4f48d53859e3c5d))
+
 ## [1.0.10](https://github.com/blephy/simple-rxstate/compare/v1.0.9...v1.0.10) (2022-05-20)
 
 
