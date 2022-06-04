@@ -1,3 +1,14 @@
+## [1.0.12](https://github.com/blephy/simple-rxstate/compare/v1.0.11...v1.0.12) (2022-06-04)
+
+
+### chore
+
+* add dictionaries to cspell ([31465e5](https://github.com/blephy/simple-rxstate/commit/31465e56e3cc746480218b2659c1a8be5b0a465f))
+* disable cspell in CHANGELOG.md ([3fe5d25](https://github.com/blephy/simple-rxstate/commit/3fe5d2512641fbf927beebd85f3f7085db606a24))
+* ignore folders with cspell ([9ef6cdc](https://github.com/blephy/simple-rxstate/commit/9ef6cdc40c185392bca174adebbbb26760165a61))
+* implement jdoc ([f508a17](https://github.com/blephy/simple-rxstate/commit/f508a17e8d3af0de6fd759b8d1eb5617de84e3da))
+* implements jsdoc rules and update dependencies ([159fe58](https://github.com/blephy/simple-rxstate/commit/159fe58b26b65e3d99825c0d46021a5d651fd207))
+
 ## [1.0.11](https://github.com/blephy/simple-rxstate/compare/v1.0.10...v1.0.11) (2022-05-22)
 
 
