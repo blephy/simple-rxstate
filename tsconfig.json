@@ -41,13 +41,14 @@
     "declaration": false,
     "sourceMap": false
   },
-  "include": ["./src/**/*", "./__tests__/**/*"],
+  "include": ["."],
   "exclude": [
     "**/node_modules/**",
+    "**/.circleci/**",
     "**/.github/**",
     "**/.husky/**",
-    "**/.circleci/**",
     "**/.yarn/**",
+    "**/.stryker-tmp/**",
     "**/stats/**",
     "**/docs/**",
     "**/documentations/**",

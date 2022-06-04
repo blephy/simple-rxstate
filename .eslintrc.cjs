@@ -16,7 +16,6 @@ module.exports = {
     },
     jsdoc: {
       tagNamePreference: {
-        param: 'arg',
         returns: 'return',
       },
     },
@@ -40,10 +39,11 @@ module.exports = {
     project: './tsconfig.eslint.json',
     projectFolderIgnoreList: [
       '**/node_modules/**',
+      '**/.circleci/**',
       '**/.github/**',
       '**/.husky/**',
-      '**/.circleci/**',
       '**/.yarn/**',
+      '**/.stryker-tmp/**',
       '**/stats/**',
       '**/docs/**',
       '**/documentations/**',
@@ -95,6 +95,7 @@ module.exports = {
           'FunctionExpression',
           'MethodDefinition',
           'Property',
+          'PropertyDefinition',
           'TSDeclareFunction',
           'TSEnumDeclaration',
           'TSInterfaceDeclaration',

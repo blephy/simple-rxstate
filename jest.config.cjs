@@ -12,7 +12,7 @@ module.exports = {
   },
   extensionsToTreatAsEsm: ['.ts'],
   moduleNameMapper: {
-    '(.+)\\.[jt]s': '$1',
+    '(.+)\\.js': '$1',
   },
   testEnvironment: 'node',
   testMatch: ['<rootDir>/__tests__/**/*.{spec,test}.ts'],
