@@ -6,10 +6,11 @@ module.exports = {
   mutate: ['./src/**/*.ts'],
   ignorePatterns: [
     '**/node_modules/**',
+    '**/.circleci/**',
     '**/.github/**',
     '**/.husky/**',
-    '**/.circleci/**',
     '**/.yarn/**',
+    '**/.stryker-tmp/**',
     '**/stats/**',
     '**/docs/**',
     '**/documentations/**',
@@ -36,5 +37,5 @@ module.exports = {
   coverageAnalysis: 'perTest',
   checkers: ['typescript'],
   tsconfigFile: 'tsconfig.stryker.json',
-  thresholds: { high: 80, low: 60, break: 50 },
+  thresholds: { high: 90, low: 65, break: 60 },
 };

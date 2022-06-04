@@ -13,6 +13,7 @@
 /cypress/screenshots/*
 /cypress/videos/*
 /cypress/downloads/*
+/.stryker-tmp/*
 
 # Ignore files #
 ################

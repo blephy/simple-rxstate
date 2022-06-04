@@ -1,15 +1,3 @@
-const test: string = 'hello';
+const test: string = 'test';
 
-/**
- * Test interface
- */
-interface TestInterface {
-  /**
-   * hello
-   *
-   * @type {string}
-   */
-  hello: string;
-}
-
-export { test, type TestInterface };
+export { test };
