@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/blephy/simple-rxstate/compare/v1.0.13...v1.0.14) (2022-06-04)
+
+
+### chore
+
+* **cspell:** run cspell on config files ([c450671](https://github.com/blephy/simple-rxstate/commit/c450671c8e34ba4ac4b9af1a6bc5931f07a0c705))
+
 ## [1.0.13](https://github.com/blephy/simple-rxstate/compare/v1.0.12...v1.0.13) (2022-06-04)
 
 
