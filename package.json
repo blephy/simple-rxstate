@@ -43,7 +43,7 @@
     "postpack": "pinst --enable",
     "semantic-release": "semantic-release",
     "spell:check": "cspell '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
-    "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --no-summary --config '.vscode/cspell.json'",
+    "spell:check:ci": "cspell lint '**' '.**/**' --show-suggestions --config '.vscode/cspell.json'",
     "test": "jest",
     "test:mutation": "stryker run",
     "test:mutation:ci": "yarn test:mutation",
