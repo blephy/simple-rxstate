@@ -2,20 +2,9 @@
   "version": "0.2",
   "language": "en",
   "allowCompoundWords": true,
-  "words": [
-    "blephy",
-    "circleci",
-    "commitlint",
-    "Dollé",
-    "IIFEs",
-    "lcov",
-    "nvmrc",
-    "pinst",
-    "rxstate",
-    "sonarjs"
-  ],
+  "dictionaries": ["softwareTerms", "typescript", "node", "html", "css", "bash", "npm"],
+  "words": ["blephy", "circleci", "Dollé", "lcov", "pinst", "rxstate", "sonarjs"],
   "flagWords": ["hte"],
-  "ignoreWords": ["nocheck", "isnan", "eqeqeq", "iife"],
   "ignorePaths": [
     "**/node_modules/**",
     "vscode-extension",
