@@ -26,6 +26,8 @@
     ".github/CODEOWNERS",
     ".husky",
     ".vscode",
-    ".yarn"
+    ".yarn",
+    ".stryker-temp",
+    "CHANGELOG.md"
   ]
 }
