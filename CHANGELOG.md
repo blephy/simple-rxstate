@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/blephy/simple-rxstate/compare/v1.0.12...v1.0.13) (2022-06-04)
+
+
+### chore
+
+* **deps:** lock file maintenance ([#52](https://github.com/blephy/simple-rxstate/issues/52)) ([9946517](https://github.com/blephy/simple-rxstate/commit/99465175d1088ca827abdb9ebe3abd8a998560ed))
+
 ## [1.0.12](https://github.com/blephy/simple-rxstate/compare/v1.0.11...v1.0.12) (2022-06-04)
 
 
