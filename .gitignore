@@ -19,7 +19,6 @@ node_modules
 /e2e-tests/cypress/screenshots
 /e2e-tests/cypress/videos
 /storybook-build
-/lokalise
 
 # Compiled source #
 ###################
