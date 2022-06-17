@@ -821,11 +821,11 @@ module.exports = {
         prev: ['const', 'let'],
         next: ['const', 'let'],
       },
-      // {
-      //   blankLine: 'never',
-      //   prev: ['export'],
-      //   next: ['export'],
-      // },
+      {
+        blankLine: 'never',
+        prev: ['export'],
+        next: ['export'],
+      },
       {
         blankLine: 'always',
         prev: '*',
