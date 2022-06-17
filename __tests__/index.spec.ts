@@ -1,4 +1,4 @@
-import { testTest } from '../src';
+import { testTest } from '../src/index.js';
 
 describe('simple rxstate', (): void => {
   describe('test constant', (): void => {

@@ -97,7 +97,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build package
-        run: yarn ts:build
+        run: yarn build
       - name: Upload lib
         uses: actions/upload-artifact@v3
         with:
