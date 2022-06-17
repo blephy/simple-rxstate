@@ -3,20 +3,21 @@ module.exports = {
   env: {
     node: true,
     commonjs: true,
-    es6: true,
-    es2020: true,
     es2022: true,
   },
   settings: {
+    'import/extensions': ['.ts', '.mts', '.cts', '.tsx', '.js', '.mjs', '.cjs', '.jsx'],
+    'import/external-module-folders': ['node_modules', 'node_modules/@types'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.mts', '.cts', '.tsx'],
+    },
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
         project: './tsconfig.eslint.json',
       },
-    },
-    jsdoc: {
-      tagNamePreference: {
-        returns: 'return',
+      node: {
+        extensions: ['.ts', '.mts', '.cts', '.tsx', '.js', '.mjs', '.cjs', '.jsx'],
       },
     },
   },
@@ -25,6 +26,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsdoc/recommended',
     'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:eslint-comments/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
@@ -55,6 +57,11 @@ module.exports = {
     ],
   },
   rules: {
+    /**
+     * eslint plugin unicorn
+     */
+    'unicorn/no-unused-properties': 'error',
+    'unicorn/no-unsafe-regex': 'error',
     /**
      * eslint plugin comments
      */
@@ -814,11 +821,11 @@ module.exports = {
         prev: ['const', 'let'],
         next: ['const', 'let'],
       },
-      {
-        blankLine: 'never',
-        prev: ['export'],
-        next: ['export'],
-      },
+      // {
+      //   blankLine: 'never',
+      //   prev: ['export'],
+      //   next: ['export'],
+      // },
       {
         blankLine: 'always',
         prev: '*',
@@ -851,8 +858,8 @@ module.exports = {
           'block',
           'block-like',
           'multiline-expression',
-          'require',
-          'import',
+          // 'require',
+          // 'import',
         ],
         next: '*',
       },
@@ -1568,7 +1575,7 @@ module.exports = {
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'off',
     'import/exports-last': 'error',
-    'import/extensions': 'off',
+    'import/extensions': 'off', // handled by TypeScript NodeNext
     'import/first': 'error',
     'import/group-exports': 'error',
     'import/max-dependencies': 'off',
@@ -1631,6 +1638,7 @@ module.exports = {
         ],
         pathGroupsExcludedImportTypes: ['builtin'],
         'newlines-between': 'always',
+        warnOnUnassignedImports: true,
       },
     ],
     'sort-imports': ['error', { ignoreDeclarationSort: true }],

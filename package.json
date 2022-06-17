@@ -17,16 +17,16 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./lib/types/index.d.ts",
-      "require": "./lib/cjs/index.js",
-      "import": "./lib/esm/index.js"
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
     }
   },
   "files": [
     "/lib/**/*"
   ],
-  "types": "./lib/types/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
+    "build": "yarn clean && tsc -b tsconfig.build.json",
     "check:packagejson": "package-check",
     "clean": "rm -rfv reports coverage build dist lib .eslintcache",
     "commit": "cz",
@@ -49,9 +49,6 @@
     "test:mutation:ci": "yarn test:mutation",
     "test:unit": "yarn test",
     "test:unit:ci": "jest --silent --coverage --runInBand --ci --bail false",
-    "ts:build": "yarn clean && yarn ts:build:cjs && yarn ts:build:esm",
-    "ts:build:cjs": "tsc -b tsconfig.build.cjs.json",
-    "ts:build:esm": "tsc -b tsconfig.build.esm.json",
     "ts:check": "tsc --noEmit"
   },
   "dependencies": {
@@ -65,18 +62,18 @@
     "@stryker-mutator/core": "^6.0.2",
     "@stryker-mutator/jest-runner": "^6.0.2",
     "@stryker-mutator/typescript-checker": "^6.0.2",
-    "@types/jest": "^28.1.0",
-    "@types/node": "^17.0.39",
-    "@typescript-eslint/eslint-plugin": "^5.27.0",
-    "@typescript-eslint/parser": "^5.27.0",
+    "@types/jest": "^28.1.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
     "commitizen": "^4.2.4",
-    "cspell": "^6.1.1",
+    "cspell": "^6.1.2",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.4.6",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-jsdoc": "^39.3.2",
     "eslint-plugin-prefer-arrow": "^1.2.3",
@@ -87,22 +84,22 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.1",
     "inquirer": "^8.2.4",
-    "jest": "^28.1.0",
+    "jest": "^28.1.1",
     "jest-junit": "^13.2.0",
-    "lint-staged": "^13.0.0",
+    "lint-staged": "^13.0.2",
     "markdownlint-cli2": "^0.4.0",
     "npm-package-json-lint": "^6.3.0",
     "pinst": "^3.0.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "prettier-package-json": "^2.6.3",
-    "semantic-release": "^19.0.2",
+    "semantic-release": "^19.0.3",
     "semantic-release-npm-github-publish": "^1.5.1",
-    "ts-jest": "^28.0.4",
+    "ts-jest": "^28.0.5",
     "typescript": "^4.7.3"
   },
   "packageManager": "yarn@3.2.1",
   "engines": {
-    "node": ">=16.15.1"
+    "node": ">=16.15"
   },
   "keywords": [
     "management",
