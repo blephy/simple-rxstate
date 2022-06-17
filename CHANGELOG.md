@@ -1,3 +1,25 @@
+## [1.0.16](https://github.com/blephy/simple-rxstate/compare/v1.0.15...v1.0.16) (2022-06-17)
+
+
+### chore
+
+* update dependencies. add cz to husky hook. only use ESM ([cee8d23](https://github.com/blephy/simple-rxstate/commit/cee8d232fb5e442e3ac69f4747000d05ef74b683))
+
+
+### ci
+
+* fix build and test job ([56c08a4](https://github.com/blephy/simple-rxstate/commit/56c08a4865c42eef80ca1ffc329942e5d0fd44b7))
+
+
+### style
+
+* **eslint:** remove blank line between export statements ([54af49d](https://github.com/blephy/simple-rxstate/commit/54af49d2043ecace311a71fc5f37b83191d21d4d))
+
+
+### Breaking changes
+
+* Dropping the support for node 12. Dropping the support for node 14. The library
+
 ## [1.0.15](https://github.com/blephy/simple-rxstate/compare/v1.0.14...v1.0.15) (2022-06-12)
 
 
