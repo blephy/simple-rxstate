@@ -9,7 +9,7 @@
   "packageFiles": ["package.json", ".github/workflows/**/*.yml"],
   "packageRules": [
     {
-      "packageNames": ["typescript", "rxjs", "tslib"],
+      "packageNames": ["typescript", "rxjs"],
       "separateMinorPatch": true
     }
   ]

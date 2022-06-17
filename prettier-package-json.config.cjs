@@ -15,7 +15,6 @@ module.exports = {
     'contributors',
     'homepage',
     'bugs',
-
     /**
      * Package publishing configuration
      */
@@ -24,7 +23,6 @@ module.exports = {
     'repository',
     'publishConfig',
     'type',
-
     /**
      * Configuration
      */
@@ -42,7 +40,6 @@ module.exports = {
     'config',
     'sideEffects',
     'typings',
-
     /**
      * Dependencies
      */
@@ -53,13 +50,11 @@ module.exports = {
     'peerDependenciesMeta',
     'optionalDependencies',
     'devDependencies',
-
     /**
      * Yarn specific
      */
     'workspaces',
     'resolutions',
-
     /**
      * Constraints
      */
@@ -68,7 +63,6 @@ module.exports = {
     'engineStrict',
     'os',
     'cpu',
-
     /**
      * Used for npm search
      */
