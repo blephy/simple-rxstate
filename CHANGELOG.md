@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/blephy/simple-rxstate/compare/v1.0.19...v1.0.20) (2022-07-03)
+
+
+### chore
+
+* **deps:** update dependency eslint-plugin-unicorn to v43 ([6cc8a12](https://github.com/blephy/simple-rxstate/commit/6cc8a12bfd17e3ee3553ff291f2de35daf07cf14))
+
 ## [1.0.19](https://github.com/blephy/simple-rxstate/compare/v1.0.18...v1.0.19) (2022-07-03)
 
 
