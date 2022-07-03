@@ -1,3 +1,16 @@
+## [1.0.22](https://github.com/blephy/simple-rxstate/compare/v1.0.21...v1.0.22) (2022-07-03)
+
+
+### chore
+
+* **husky:** delete prepare-commit-msg hoook ([4b9ee48](https://github.com/blephy/simple-rxstate/commit/4b9ee489af9395ff3b874088267c252634c06c12))
+* review qa and eslint config ([c0997b8](https://github.com/blephy/simple-rxstate/commit/c0997b8a387fa9efcf7d5e84b8784dbe310ef41f))
+
+
+### ci
+
+* delete lint packagejson step in qa job ([6348003](https://github.com/blephy/simple-rxstate/commit/634800341ed1f99f8df7489b36037e5c081a752e))
+
 ## [1.0.21](https://github.com/blephy/simple-rxstate/compare/v1.0.20...v1.0.21) (2022-07-03)
 
 
