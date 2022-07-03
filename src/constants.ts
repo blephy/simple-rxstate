@@ -1,3 +1,3 @@
-const test: string = 'test';
+const TEST: string = 'test';
 
-export { test };
+export { TEST };

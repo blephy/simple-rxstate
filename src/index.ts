@@ -1,5 +1,5 @@
-import { test } from './constants.js';
+import { TEST } from './constants.js';
 
-const testTest: string = `hello${test}`;
+const TEST_TEST: string = `hello${TEST}`;
 
-export { testTest };
+export { TEST_TEST };
