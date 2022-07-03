@@ -80,7 +80,7 @@
     "eslint-plugin-rxjs": "^5.0.2",
     "eslint-plugin-sonarjs": "^0.13.0",
     "eslint-plugin-sort-exports": "^0.6.0",
-    "eslint-plugin-unicorn": "^42.0.0",
+    "eslint-plugin-unicorn": "^43.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.1",
     "inquirer": "^9.0.0",
