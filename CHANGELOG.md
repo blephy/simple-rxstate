@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/blephy/simple-rxstate/compare/v1.0.20...v1.0.21) (2022-07-03)
+
+
+### chore
+
+* **deps:** update dependency eslint-import-resolver-typescript to v3 ([bef190f](https://github.com/blephy/simple-rxstate/commit/bef190fcfad644a8cba1b95a72fd41ae0e95da80))
+
 ## [1.0.20](https://github.com/blephy/simple-rxstate/compare/v1.0.19...v1.0.20) (2022-07-03)
 
 
