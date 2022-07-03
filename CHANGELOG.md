@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/blephy/simple-rxstate/compare/v1.0.17...v1.0.18) (2022-07-03)
+
+
+### chore
+
+* **deps:** update dependency inquirer to v9 ([8d6cbb9](https://github.com/blephy/simple-rxstate/commit/8d6cbb9239edccf8dedb92e48ab7f2e4250e1bec))
+
 ## [1.0.17](https://github.com/blephy/simple-rxstate/compare/v1.0.16...v1.0.17) (2022-07-03)
 
 
