@@ -1,3 +1,16 @@
+## [1.0.23](https://github.com/blephy/simple-rxstate/compare/v1.0.22...v1.0.23) (2022-07-03)
+
+
+### chore
+
+* **husky:** add more extension to lint-staged ([6249343](https://github.com/blephy/simple-rxstate/commit/624934383bb016c57f4822394c9fcd921fa0b1b0))
+
+
+### style
+
+* **eslint:** review naming convention ([6a144f1](https://github.com/blephy/simple-rxstate/commit/6a144f134bcc4539d0b3fab3a84054404f50fee0))
+* resolve lint issue ([c084c10](https://github.com/blephy/simple-rxstate/commit/c084c10caf959bc25f1f05cb06aa60725de9a8b1))
+
 ## [1.0.22](https://github.com/blephy/simple-rxstate/compare/v1.0.21...v1.0.22) (2022-07-03)
 
 
