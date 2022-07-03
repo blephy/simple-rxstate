@@ -16,9 +16,8 @@ node_modules
 /coverage
 /reports
 /monitor
-/e2e-tests/cypress/screenshots
-/e2e-tests/cypress/videos
-/storybook-build
+cypress/screenshots
+cypress/videos
 
 # Compiled source #
 ###################
