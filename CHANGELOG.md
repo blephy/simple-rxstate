@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/blephy/simple-rxstate/compare/v1.0.18...v1.0.19) (2022-07-03)
+
+
+### chore
+
+* **deps:** update dependency jest-junit to v14 ([e4da59b](https://github.com/blephy/simple-rxstate/commit/e4da59bb959f517effe510276ec881f2aace5080))
+
 ## [1.0.18](https://github.com/blephy/simple-rxstate/compare/v1.0.17...v1.0.18) (2022-07-03)
 
 
