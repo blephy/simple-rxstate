@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/blephy/simple-rxstate/compare/v1.0.24...v1.0.25) (2022-07-07)
+
+
+### chore
+
+* **deps:** update dependency eslint-plugin-sort-exports to ^0.7.0 ([525b863](https://github.com/blephy/simple-rxstate/commit/525b863a478d288b7b97524906183e476c0d62d9))
+
 ## [1.0.24](https://github.com/blephy/simple-rxstate/compare/v1.0.23...v1.0.24) (2022-07-07)
 
 
