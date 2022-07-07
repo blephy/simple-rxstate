@@ -4543,12 +4543,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sort-exports@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "eslint-plugin-sort-exports@npm:0.6.0"
+"eslint-plugin-sort-exports@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "eslint-plugin-sort-exports@npm:0.7.0"
   peerDependencies:
     eslint: ">=5.0.0"
-  checksum: 540188eaa42e9df73d00489852756805b55a696b5d7b56ff85abb8a7a8a4691b2200372e1f8d4bafc084d5f8302fe8d46c0bb00ff8f5378aac63b60a32a84ead
+  checksum: 504104a0b9d35e1d3841e920b73a01aba5e35e9eaaf50972ca2814c26ddf2a78687bf7b684bc577040ca9fce07d7fbe7736bf8afa486d0c6e9a8a7ebd860fb40
   languageName: node
   linkType: hard
 
@@ -9564,7 +9564,7 @@ __metadata:
     eslint-plugin-prefer-arrow: ^1.2.3
     eslint-plugin-rxjs: ^5.0.2
     eslint-plugin-sonarjs: ^0.13.0
-    eslint-plugin-sort-exports: ^0.6.0
+    eslint-plugin-sort-exports: ^0.7.0
     eslint-plugin-unicorn: ^43.0.0
     eslint-plugin-unused-imports: ^2.0.0
     husky: ^8.0.1
