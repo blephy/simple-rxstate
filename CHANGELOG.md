@@ -1,3 +1,11 @@
+## [1.0.27](https://github.com/blephy/simple-rxstate/compare/v1.0.26...v1.0.27) (2022-07-24)
+
+
+### chore
+
+* **deps:** upgrade yarn and dependencies ([8ad0aab](https://github.com/blephy/simple-rxstate/commit/8ad0aab55bd4a17547d9e5c9622884f213031e28))
+* recompute yarn.lock ([c50e94e](https://github.com/blephy/simple-rxstate/commit/c50e94e50e901d480c23938ddfd47ab286630149))
+
 ## [1.0.26](https://github.com/blephy/simple-rxstate/compare/v1.0.25...v1.0.26) (2022-07-11)
 
 
