@@ -1,3 +1,10 @@
+## [1.0.28](https://github.com/blephy/simple-rxstate/compare/v1.0.27...v1.0.28) (2022-08-14)
+
+
+### chore
+
+* **deps:** update dependency eslint-plugin-sonarjs to ^0.15.0 ([74f6c70](https://github.com/blephy/simple-rxstate/commit/74f6c700a1b10afb739d0358e3ddd590299aec2f))
+
 ## [1.0.27](https://github.com/blephy/simple-rxstate/compare/v1.0.26...v1.0.27) (2022-07-24)
 
 
