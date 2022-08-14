@@ -1,3 +1,10 @@
+## [1.0.29](https://github.com/blephy/simple-rxstate/compare/v1.0.28...v1.0.29) (2022-08-14)
+
+
+### chore
+
+* **deps:** update dependency markdownlint-cli2 to ^0.5.0 ([d22f7f7](https://github.com/blephy/simple-rxstate/commit/d22f7f78980ff3be490de4b471d6d7f945d7b053))
+
 ## [1.0.28](https://github.com/blephy/simple-rxstate/compare/v1.0.27...v1.0.28) (2022-08-14)
 
 
