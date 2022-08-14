@@ -1,6 +1,6 @@
 {
   "name": "simple-rxstate",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "Simple rxjs based state management system",
   "author": "Allan Dollé <hello@allandolle.fr> (https://allandolle.fr/)",
   "homepage": "https://github.com/blephy/simple-rxstate#readme",
