@@ -4471,20 +4471,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^26.6.0":
-  version: 26.8.2
-  resolution: "eslint-plugin-jest@npm:26.8.2"
+"eslint-plugin-jest@npm:^27.0.0":
+  version: 27.2.1
+  resolution: "eslint-plugin-jest@npm:27.2.1"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
     "@typescript-eslint/eslint-plugin": ^5.0.0
-    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    eslint: ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
     jest:
       optional: true
-  checksum: 78d61467fef83fc0ce896cc54343d5b20e587baceb2e2d44f39a0c5fb1b693ee4adde7ed3b18e090381c4cd8a6b1094ad116caa502362f4152f9918b0a351a3e
+  checksum: 579a4d26304cc6748b2e6dff6c965ea7a21b618d8b051eb02727d25cf5c7767f6db8ef5237531635ff77e242b983b973e7cb8c820a4d20d5bda73358c452a8ab
   languageName: node
   linkType: hard
 
@@ -9487,7 +9487,7 @@ __metadata:
     eslint-plugin-arca: ^0.15.0
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-jest: ^26.6.0
+    eslint-plugin-jest: ^27.0.0
     eslint-plugin-jest-formatting: ^3.1.0
     eslint-plugin-jsdoc: ^39.3.3
     eslint-plugin-n: ^15.2.4
