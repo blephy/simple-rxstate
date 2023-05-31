@@ -1,3 +1,10 @@
+## [1.0.31](https://github.com/blephy/simple-rxstate/compare/v1.0.30...v1.0.31) (2023-05-31)
+
+
+### docs
+
+* update README ([754631a](https://github.com/blephy/simple-rxstate/commit/754631a241382b1e95c90a1d69c90827d3de04d9))
+
 ## [1.0.30](https://github.com/blephy/simple-rxstate/compare/v1.0.29...v1.0.30) (2022-08-14)
 
 
