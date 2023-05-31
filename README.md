@@ -21,4 +21,4 @@
 
 </div>
 
-Simple rxjs based state management system
+Simple rxjs based state management system.
