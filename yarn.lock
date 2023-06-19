@@ -4408,10 +4408,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-arca@npm:^0.15.0":
-  version: 0.15.0
-  resolution: "eslint-plugin-arca@npm:0.15.0"
-  checksum: 7577cae4bf4fe74aa9ea1dd265458426247d02e5456f0d1d0e2749de1299c4de660b16953ffdec0827230cc5f5df6c7700a992505c82b1edf7740e0a34409dc3
+"eslint-plugin-arca@npm:^0.16.0":
+  version: 0.16.0
+  resolution: "eslint-plugin-arca@npm:0.16.0"
+  checksum: 189e612914833e3d95f5ddcf9245ac77f14590e60de0ffb04e0c31a66b8c1c7798658d4cb9ea0d05ee7ee39c1804f0d24d4061048aa365859010bf85249b2b63
   languageName: node
   linkType: hard
 
@@ -9484,7 +9484,7 @@ __metadata:
     eslint: ^8.20.0
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: ^3.3.0
-    eslint-plugin-arca: ^0.15.0
+    eslint-plugin-arca: ^0.16.0
     eslint-plugin-eslint-comments: ^3.2.0
     eslint-plugin-import: ^2.26.0
     eslint-plugin-jest: ^26.6.0
