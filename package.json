@@ -78,7 +78,7 @@
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "eslint-plugin-rxjs": "^5.0.2",
-    "eslint-plugin-sonarjs": "^0.15.0",
+    "eslint-plugin-sonarjs": "^0.25.0",
     "eslint-plugin-sort-exports": "^0.7.0",
     "eslint-plugin-unicorn": "^43.0.2",
     "eslint-plugin-unused-imports": "^2.0.0",
